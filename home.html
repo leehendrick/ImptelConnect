@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/input.css">
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-full">
 
@@ -103,7 +105,7 @@
       </div>
       
       <!--Aqui começa o container-->
-      <div class="bg-white py-24 sm:py-32">
+      <div class="bg-white py-12 sm:py-20">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:text-center">
             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tudo que o seu filho precisa </p>
@@ -154,10 +156,55 @@
       </div>
       <!--Aqui termina o container-->
 
-      <!--Container Explore mais-->
+      <!--Aqui começa o slide-->
+      <div class="w-full">
+        <!-- Elementos filhos podem pegar o tamanho do container usando w-full e h-full -->
+        <div class="text-white w-full">
+          <div class="slideshow-container">
+            <div class="slide w-full object-cover">
+              <img src="./img/img_1.jpg" alt="Slide 1" class="w-full object-cover ">
+              <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+              <div class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia saepe iste! Mollitia, iusto sequi eveniet.</div>
+            </div>
+            <div class="slide w-full  object-cover ">
+              <img src="./img/img_2.jpg" alt="Slide 2" class="w-full object-cover ">
+              <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+              <div class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia saepe iste! Mollitia, iusto sequi eveniet.</div>
+            </div>
+            <div class="slide w-full object-cover">
+              <img src="./img/img_3.jpg" alt="Slide 3" class="w-full object-cover ">
+              <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+              <div class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia saepe iste! Mollitia, iusto sequi eveniet.</div>
+            </div>
+            <div class="slide w-full  object-cover ">
+              <img src="./img/img_4.jpg" alt="Slide 3" class="w-full object-cover">
+              <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+              <div class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi mollitia saepe iste! Mollitia, iusto sequi eveniet.</div>
+            </div>
+          
+            <!-- Add more slides as needed -->
+          
+            <button onclick="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+              </svg>          
+            </button>
+            <button onclick="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+              </svg> 
+            </button>
 
-      <!--Fim Container Explore mais-->
+            <div class="indicators">
+              <!-- Indicators will be added dynamically with JavaScript -->
+            </div>
 
+          </div>
+        </div>
+
+        <!-- Adicione mais elementos filhos conforme necessário -->
+      </div>
+<!--Aqui termina o slide-->
       <!-- More main page content here... -->
     </main>
 
